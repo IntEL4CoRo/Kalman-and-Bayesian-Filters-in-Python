@@ -3,7 +3,7 @@ dependencies:
 - python=3.10
 - pip
 - ipython
-- jupyter
+- jupyterlab>4.0
 - matplotlib
 - scipy
 - sympy
