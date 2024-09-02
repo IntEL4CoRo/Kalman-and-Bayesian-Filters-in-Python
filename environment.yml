@@ -1,6 +1,6 @@
 name: kf_bf
 dependencies:
-- python
+- python=3.10
 - pip
 - ipython
 - jupyter
