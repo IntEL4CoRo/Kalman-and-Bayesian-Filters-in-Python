@@ -3,8 +3,10 @@ dependencies:
 - python=3.10
 - pip
 - ipython
-- jupyterlab>4.0
-- matplotlib
+- jupyterlab~=4.0.0
+- jupyterlab-git
+- matplotlib-base
+- ipympl
 - scipy
 - sympy
 - pip:
