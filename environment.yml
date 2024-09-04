@@ -7,6 +7,7 @@ dependencies:
 - jupyterlab-git
 - matplotlib-base
 - ipympl
+- numpy<2
 - scipy
 - sympy
 - pip:

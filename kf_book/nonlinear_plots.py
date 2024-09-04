@@ -234,7 +234,7 @@ def plot_monte_carlo_mean(xs, ys, f, mean_fx, label, plot_colormap=True):
     computed_mean_y = np.average(fys)
 
     ax = plt.subplot(121)
-    ax.grid(b=False)
+    ax.grid(visible=False)
 
     plot_bivariate_colormap(xs, ys)
 
@@ -243,7 +243,7 @@ def plot_monte_carlo_mean(xs, ys, f, mean_fx, label, plot_colormap=True):
     ax.set_ylim(-20, 20)
 
     ax = plt.subplot(122)
-    ax.grid(b=False)
+    ax.grid(visible=False)
 
     plt.scatter(fxs, fys, marker='.', alpha=0.02, color='k')
     plt.scatter(mean_fx[0], mean_fx[1],
@@ -268,7 +268,7 @@ def plot_cov_ellipse_colormap(cov=[[1,1],[1,1]]):
     pos[:, :, 1] = Y
     plt.axes(xticks=[], yticks=[], frameon=True)
     rv = scipy.stats.multivariate_normal((0,0), cov)
-    plt.gca().grid(b=False)
+    plt.gca().grid(visible=False)
     plt.gca().imshow(rv.pdf(pos), cmap=plt.cm.Greys, origin='lower')
     plt.show()
 
